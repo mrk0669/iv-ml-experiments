@@ -1,0 +1,177 @@
+<svg viewBox="0 0 1200 780" xmlns="http://www.w3.org/2000/svg" font-family="Helvetica, Arial, sans-serif">
+  <defs>
+    <marker id="arrow1" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse">
+      <path d="M0,0 L10,5 L0,10 z" fill="#8A93A6"/>
+    </marker>
+  </defs>
+  <rect x="0" y="0" width="1200" height="780" fill="#FFFFFF"/>
+
+  <!-- Root -->
+  <rect x="500" y="20" width="200" height="54" rx="10" fill="#0B2447"/>
+  <text x="600" y="53" text-anchor="middle" fill="#FFFFFF" font-size="18" font-weight="bold">Home</text>
+
+  <!-- Level 2 nodes -->
+  <!-- positions: 6 columns across width 1200, centers at 100,290,480,670,860,1050 roughly; use 8 columns for balance -->
+
+  <!-- Connector from root down to a horizontal bus line -->
+  <line x1="600" y1="74" x2="600" y2="105" stroke="#8A93A6" stroke-width="2"/>
+  <line x1="90" y1="105" x2="1110" y2="105" stroke="#8A93A6" stroke-width="2"/>
+
+  <!-- Category node template positions -->
+  <!-- 1 Marketplace -->
+  <g>
+    <line x1="90" y1="105" x2="90" y2="130" stroke="#8A93A6" stroke-width="2" marker-end="url(#arrow1)"/>
+    <rect x="10" y="130" width="160" height="46" rx="8" fill="#1B7F5B"/>
+    <text x="90" y="158" text-anchor="middle" fill="#fff" font-size="14" font-weight="bold">Marketplace</text>
+  </g>
+  <!-- 2 Sell a Resource -->
+  <g>
+    <line x1="260" y1="105" x2="260" y2="130" stroke="#8A93A6" stroke-width="2" marker-end="url(#arrow1)"/>
+    <rect x="180" y="130" width="160" height="46" rx="8" fill="#1B7F5B"/>
+    <text x="260" y="152" text-anchor="middle" fill="#fff" font-size="13" font-weight="bold">Sell / List a</text>
+    <text x="260" y="168" text-anchor="middle" fill="#fff" font-size="13" font-weight="bold">Resource</text>
+  </g>
+  <!-- 3 Dashboards -->
+  <g>
+    <line x1="430" y1="105" x2="430" y2="130" stroke="#8A93A6" stroke-width="2" marker-end="url(#arrow1)"/>
+    <rect x="350" y="130" width="160" height="46" rx="8" fill="#1B7F5B"/>
+    <text x="430" y="158" text-anchor="middle" fill="#fff" font-size="14" font-weight="bold">Dashboard</text>
+  </g>
+  <!-- 4 Company Profiles -->
+  <g>
+    <line x1="600" y1="105" x2="600" y2="130" stroke="#8A93A6" stroke-width="2" marker-end="url(#arrow1)"/>
+    <rect x="520" y="130" width="160" height="46" rx="8" fill="#1B7F5B"/>
+    <text x="600" y="152" text-anchor="middle" fill="#fff" font-size="13" font-weight="bold">Company</text>
+    <text x="600" y="168" text-anchor="middle" fill="#fff" font-size="13" font-weight="bold">Profiles</text>
+  </g>
+  <!-- 5 Account -->
+  <g>
+    <line x1="770" y1="105" x2="770" y2="130" stroke="#8A93A6" stroke-width="2" marker-end="url(#arrow1)"/>
+    <rect x="690" y="130" width="160" height="46" rx="8" fill="#1B7F5B"/>
+    <text x="770" y="158" text-anchor="middle" fill="#fff" font-size="14" font-weight="bold">Account</text>
+  </g>
+  <!-- 6 Resources/Help -->
+  <g>
+    <line x1="940" y1="105" x2="940" y2="130" stroke="#8A93A6" stroke-width="2" marker-end="url(#arrow1)"/>
+    <rect x="860" y="130" width="160" height="46" rx="8" fill="#1B7F5B"/>
+    <text x="940" y="152" text-anchor="middle" fill="#fff" font-size="13" font-weight="bold">Resources /</text>
+    <text x="940" y="168" text-anchor="middle" fill="#fff" font-size="13" font-weight="bold">Help Center</text>
+  </g>
+  <!-- 7 Admin (offset, dashed) -->
+  <g>
+    <line x1="1110" y1="105" x2="1110" y2="130" stroke="#E06A1F" stroke-width="2" stroke-dasharray="4,3" marker-end="url(#arrow1)"/>
+    <rect x="1030" y="130" width="160" height="46" rx="8" fill="#E06A1F"/>
+    <text x="1110" y="158" text-anchor="middle" fill="#fff" font-size="13" font-weight="bold">Admin (internal)</text>
+  </g>
+
+  <!-- Leaf nodes helper macro (manually placed) -->
+  <!-- Marketplace leaves -->
+  <g font-size="12" fill="#22222A">
+    <line x1="90" y1="176" x2="90" y2="196" stroke="#D7DCE8" stroke-width="1.5"/>
+    <rect x="5" y="196" width="170" height="34" rx="6" fill="#EEF2F8" stroke="#D7DCE8"/>
+    <text x="90" y="217" text-anchor="middle">Browse &amp; Search</text>
+
+    <line x1="90" y1="230" x2="90" y2="250" stroke="#D7DCE8" stroke-width="1.5"/>
+    <rect x="5" y="250" width="170" height="34" rx="6" fill="#EEF2F8" stroke="#D7DCE8"/>
+    <text x="90" y="271" text-anchor="middle">Category Pages</text>
+
+    <line x1="90" y1="284" x2="90" y2="304" stroke="#D7DCE8" stroke-width="1.5"/>
+    <rect x="5" y="304" width="170" height="34" rx="6" fill="#EEF2F8" stroke="#D7DCE8"/>
+    <text x="90" y="325" text-anchor="middle">Listing Detail Page</text>
+  </g>
+
+  <!-- Sell a Resource leaves -->
+  <g font-size="12" fill="#22222A">
+    <line x1="260" y1="176" x2="260" y2="196" stroke="#D7DCE8" stroke-width="1.5"/>
+    <rect x="175" y="196" width="170" height="34" rx="6" fill="#EEF2F8" stroke="#D7DCE8"/>
+    <text x="260" y="217" text-anchor="middle">Create Listing (wizard)</text>
+
+    <line x1="260" y1="230" x2="260" y2="250" stroke="#D7DCE8" stroke-width="1.5"/>
+    <rect x="175" y="250" width="170" height="34" rx="6" fill="#EEF2F8" stroke="#D7DCE8"/>
+    <text x="260" y="271" text-anchor="middle">My Listings / Analytics</text>
+  </g>
+
+  <!-- Dashboard leaves -->
+  <g font-size="12" fill="#22222A">
+    <line x1="430" y1="176" x2="430" y2="196" stroke="#D7DCE8" stroke-width="1.5"/>
+    <rect x="345" y="196" width="170" height="34" rx="6" fill="#EEF2F8" stroke="#D7DCE8"/>
+    <text x="430" y="217" text-anchor="middle">Messages / Negotiations</text>
+
+    <line x1="430" y1="230" x2="430" y2="250" stroke="#D7DCE8" stroke-width="1.5"/>
+    <rect x="345" y="250" width="170" height="34" rx="6" fill="#EEF2F8" stroke="#D7DCE8"/>
+    <text x="430" y="271" text-anchor="middle">Orders &amp; RFQs</text>
+
+    <line x1="430" y1="284" x2="430" y2="304" stroke="#D7DCE8" stroke-width="1.5"/>
+    <rect x="345" y="304" width="170" height="34" rx="6" fill="#EEF2F8" stroke="#D7DCE8"/>
+    <text x="430" y="325" text-anchor="middle">Sustainability Impact</text>
+  </g>
+
+  <!-- Company Profiles leaves -->
+  <g font-size="12" fill="#22222A">
+    <line x1="600" y1="176" x2="600" y2="196" stroke="#D7DCE8" stroke-width="1.5"/>
+    <rect x="515" y="196" width="170" height="34" rx="6" fill="#EEF2F8" stroke="#D7DCE8"/>
+    <text x="600" y="217" text-anchor="middle">Public Profile &amp; Badges</text>
+
+    <line x1="600" y1="230" x2="600" y2="250" stroke="#D7DCE8" stroke-width="1.5"/>
+    <rect x="515" y="250" width="170" height="34" rx="6" fill="#EEF2F8" stroke="#D7DCE8"/>
+    <text x="600" y="271" text-anchor="middle">Ratings &amp; Reviews</text>
+  </g>
+
+  <!-- Account leaves -->
+  <g font-size="12" fill="#22222A">
+    <line x1="770" y1="176" x2="770" y2="196" stroke="#D7DCE8" stroke-width="1.5"/>
+    <rect x="685" y="196" width="170" height="34" rx="6" fill="#EEF2F8" stroke="#D7DCE8"/>
+    <text x="770" y="217" text-anchor="middle">Sign Up / Login</text>
+
+    <line x1="770" y1="230" x2="770" y2="250" stroke="#D7DCE8" stroke-width="1.5"/>
+    <rect x="685" y="250" width="170" height="34" rx="6" fill="#EEF2F8" stroke="#D7DCE8"/>
+    <text x="770" y="271" text-anchor="middle">Business KYC Verify</text>
+
+    <line x1="770" y1="284" x2="770" y2="304" stroke="#D7DCE8" stroke-width="1.5"/>
+    <rect x="685" y="304" width="170" height="34" rx="6" fill="#EEF2F8" stroke="#D7DCE8"/>
+    <text x="770" y="325" text-anchor="middle">Settings &amp; Billing</text>
+  </g>
+
+  <!-- Resources leaves -->
+  <g font-size="12" fill="#22222A">
+    <line x1="940" y1="176" x2="940" y2="196" stroke="#D7DCE8" stroke-width="1.5"/>
+    <rect x="855" y="196" width="170" height="34" rx="6" fill="#EEF2F8" stroke="#D7DCE8"/>
+    <text x="940" y="217" text-anchor="middle">Circular Economy Guides</text>
+
+    <line x1="940" y1="230" x2="940" y2="250" stroke="#D7DCE8" stroke-width="1.5"/>
+    <rect x="855" y="250" width="170" height="34" rx="6" fill="#EEF2F8" stroke="#D7DCE8"/>
+    <text x="940" y="271" text-anchor="middle">Support / Contact</text>
+  </g>
+
+  <!-- Admin leaves -->
+  <g font-size="12" fill="#22222A">
+    <line x1="1110" y1="176" x2="1110" y2="196" stroke="#F0D6B8" stroke-width="1.5"/>
+    <rect x="1025" y="196" width="170" height="34" rx="6" fill="#FDF1E7" stroke="#F0D6B8"/>
+    <text x="1110" y="217" text-anchor="middle">Moderation &amp; Disputes</text>
+
+    <line x1="1110" y1="230" x2="1110" y2="250" stroke="#F0D6B8" stroke-width="1.5"/>
+    <rect x="1025" y="250" width="170" height="34" rx="6" fill="#FDF1E7" stroke="#F0D6B8"/>
+    <text x="1110" y="271" text-anchor="middle">Platform Analytics</text>
+  </g>
+
+  <!-- Legend -->
+  <g font-size="12" fill="#22222A">
+    <rect x="20" y="420" width="1160" height="1" fill="#E3E8E5"/>
+    <text x="20" y="450" font-size="13" font-weight="bold" fill="#0B2447">Legend</text>
+    <rect x="20" y="465" width="16" height="16" fill="#0B2447"/>
+    <text x="42" y="478">Landing / root page</text>
+    <rect x="220" y="465" width="16" height="16" fill="#1B7F5B"/>
+    <text x="242" y="478">Primary section (public-facing)</text>
+    <rect x="520" y="465" width="16" height="16" fill="#E06A1F"/>
+    <text x="542" y="478">Internal / restricted section</text>
+    <rect x="800" y="465" width="16" height="16" fill="#EEF2F8" stroke="#D7DCE8"/>
+    <text x="822" y="478">Sub-page</text>
+  </g>
+
+  <text x="600" y="530" text-anchor="middle" font-size="13" fill="#5B6472">
+    Public marketing &amp; discovery surfaces sit above the fold; transactional workflows (Dashboard, Sell) require an authenticated,
+  </text>
+  <text x="600" y="550" text-anchor="middle" font-size="13" fill="#5B6472">
+    verified business account. Admin tools are isolated behind role-based access and are not linked from the public nav.
+  </text>
+</svg>

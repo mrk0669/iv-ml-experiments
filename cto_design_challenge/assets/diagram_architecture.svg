@@ -1,0 +1,177 @@
+<svg viewBox="0 0 1200 1000" xmlns="http://www.w3.org/2000/svg" font-family="Helvetica, Arial, sans-serif">
+  <defs>
+    <marker id="arrow3" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="6.5" markerHeight="6.5" orient="auto-start-reverse">
+      <path d="M0,0 L10,5 L0,10 z" fill="#8A93A6"/>
+    </marker>
+  </defs>
+  <rect width="1200" height="1000" fill="#FFFFFF"/>
+
+  <!-- Client layer -->
+  <text x="30" y="34" font-size="13" font-weight="bold" fill="#5B6472">CLIENT LAYER</text>
+  <rect x="20" y="44" width="900" height="70" rx="10" fill="#EEF2F8" stroke="#D7DCE8"/>
+  <rect x="40" y="59" width="200" height="40" rx="6" fill="#1B7F5B"/>
+  <text x="140" y="84" text-anchor="middle" fill="#fff" font-size="13" font-weight="bold">Web App (Next.js / React)</text>
+  <rect x="260" y="59" width="200" height="40" rx="6" fill="#1B7F5B"/>
+  <text x="360" y="84" text-anchor="middle" fill="#fff" font-size="13" font-weight="bold">Mobile App (React Native)</text>
+  <rect x="480" y="59" width="200" height="40" rx="6" fill="#1B7F5B"/>
+  <text x="580" y="84" text-anchor="middle" fill="#fff" font-size="13" font-weight="bold">Admin Console</text>
+  <rect x="700" y="59" width="200" height="40" rx="6" fill="#1B7F5B"/>
+  <text x="800" y="76" text-anchor="middle" fill="#fff" font-size="12" font-weight="bold">Partner / Logistics</text>
+  <text x="800" y="91" text-anchor="middle" fill="#fff" font-size="12" font-weight="bold">API Clients</text>
+
+  <!-- Security sidebar -->
+  <rect x="950" y="44" width="230" height="920" rx="10" fill="#FDF1E7" stroke="#F0D6B8"/>
+  <text x="1065" y="70" text-anchor="middle" font-size="13" font-weight="bold" fill="#B5551A">CROSS-CUTTING CONCERNS</text>
+  <g font-size="11.5" fill="#6B4A1E">
+    <rect x="970" y="86" width="190" height="34" rx="6" fill="#FFFFFF" stroke="#F0D6B8"/>
+    <text x="1065" y="107" text-anchor="middle">IAM &amp; Secrets Manager</text>
+    <rect x="970" y="128" width="190" height="34" rx="6" fill="#FFFFFF" stroke="#F0D6B8"/>
+    <text x="1065" y="149" text-anchor="middle">WAF / DDoS Protection</text>
+    <rect x="970" y="170" width="190" height="34" rx="6" fill="#FFFFFF" stroke="#F0D6B8"/>
+    <text x="1065" y="191" text-anchor="middle">Logging &amp; Tracing</text>
+    <rect x="970" y="212" width="190" height="34" rx="6" fill="#FFFFFF" stroke="#F0D6B8"/>
+    <text x="1065" y="233" text-anchor="middle">Metrics / Alerting</text>
+    <rect x="970" y="254" width="190" height="34" rx="6" fill="#FFFFFF" stroke="#F0D6B8"/>
+    <text x="1065" y="275" text-anchor="middle">CI/CD Pipeline</text>
+  </g>
+
+  <text x="1065" y="330" text-anchor="middle" font-size="13" font-weight="bold" fill="#B5551A">EXTERNAL INTEGRATIONS</text>
+  <g font-size="11.5" fill="#6B4A1E">
+    <rect x="970" y="346" width="190" height="34" rx="6" fill="#FFFFFF" stroke="#F0D6B8"/>
+    <text x="1065" y="367" text-anchor="middle">Stripe Connect (payments)</text>
+    <rect x="970" y="388" width="190" height="34" rx="6" fill="#FFFFFF" stroke="#F0D6B8"/>
+    <text x="1065" y="409" text-anchor="middle">Maps / Geolocation</text>
+    <rect x="970" y="430" width="190" height="34" rx="6" fill="#FFFFFF" stroke="#F0D6B8"/>
+    <text x="1065" y="451" text-anchor="middle">Freight / Logistics APIs</text>
+    <rect x="970" y="472" width="190" height="34" rx="6" fill="#FFFFFF" stroke="#F0D6B8"/>
+    <text x="1065" y="493" text-anchor="middle">Email / SMS (SendGrid, Twilio)</text>
+    <rect x="970" y="514" width="190" height="34" rx="6" fill="#FFFFFF" stroke="#F0D6B8"/>
+    <text x="1065" y="535" text-anchor="middle">Carbon / Emissions Factor DB</text>
+    <rect x="970" y="556" width="190" height="34" rx="6" fill="#FFFFFF" stroke="#F0D6B8"/>
+    <text x="1065" y="577" text-anchor="middle">Business KYC Verification</text>
+  </g>
+  <line x1="950" y1="620" x2="1180" y2="620" stroke="#F0D6B8" stroke-width="1"/>
+  <text x="1065" y="645" text-anchor="middle" font-size="11" fill="#B5551A">Integrations are called by the</text>
+  <text x="1065" y="660" text-anchor="middle" font-size="11" fill="#B5551A">relevant service via outbound</text>
+  <text x="1065" y="675" text-anchor="middle" font-size="11" fill="#B5551A">adapters, never directly by clients.</text>
+
+  <!-- Arrow client -> gateway -->
+  <line x1="460" y1="114" x2="460" y2="140" stroke="#8A93A6" stroke-width="2" marker-end="url(#arrow3)"/>
+
+  <!-- Edge / Gateway -->
+  <text x="30" y="135" font-size="13" font-weight="bold" fill="#5B6472">EDGE &amp; GATEWAY</text>
+  <rect x="20" y="140" width="900" height="60" rx="10" fill="#0B2447"/>
+  <text x="460" y="165" text-anchor="middle" fill="#fff" font-size="14" font-weight="bold">CDN (CloudFront) + API Gateway</text>
+  <text x="460" y="184" text-anchor="middle" fill="#DCE3F5" font-size="11.5">TLS termination · authentication · rate limiting · request routing</text>
+
+  <line x1="460" y1="200" x2="460" y2="222" stroke="#8A93A6" stroke-width="2" marker-end="url(#arrow3)"/>
+
+  <!-- Service layer -->
+  <text x="30" y="238" font-size="13" font-weight="bold" fill="#5B6472">CORE SERVICES (modular monolith &#8594; microservices as scale demands)</text>
+  <rect x="20" y="246" width="900" height="330" rx="10" fill="#F3F4F8" stroke="#D7DCE8"/>
+
+  <!-- 12 service boxes, 4 cols x 3 rows -->
+  <g font-size="12" font-weight="bold" fill="#fff">
+    <!-- row1 -->
+    <rect x="40" y="266" width="195" height="56" rx="8" fill="#1B7F5B"/>
+    <text x="137" y="290" text-anchor="middle">Identity &amp; Business</text>
+    <text x="137" y="306" text-anchor="middle">KYC Service</text>
+
+    <rect x="250" y="266" width="195" height="56" rx="8" fill="#1B7F5B"/>
+    <text x="347" y="290" text-anchor="middle">Listings &amp; Catalog</text>
+    <text x="347" y="306" text-anchor="middle">Service</text>
+
+    <rect x="460" y="266" width="195" height="56" rx="8" fill="#1B7F5B"/>
+    <text x="557" y="290" text-anchor="middle">Search &amp; Discovery</text>
+    <text x="557" y="306" text-anchor="middle">Service</text>
+
+    <rect x="670" y="266" width="230" height="56" rx="8" fill="#1B7F5B"/>
+    <text x="785" y="290" text-anchor="middle">Matching &amp;</text>
+    <text x="785" y="306" text-anchor="middle">Recommendation Service</text>
+
+    <!-- row2 -->
+    <rect x="40" y="334" width="195" height="56" rx="8" fill="#1B7F5B"/>
+    <text x="137" y="358" text-anchor="middle">Messaging /</text>
+    <text x="137" y="374" text-anchor="middle">Negotiation (WS)</text>
+
+    <rect x="250" y="334" width="195" height="56" rx="8" fill="#1B7F5B"/>
+    <text x="347" y="358" text-anchor="middle">Transactions &amp;</text>
+    <text x="347" y="374" text-anchor="middle">Orders Service</text>
+
+    <rect x="460" y="334" width="195" height="56" rx="8" fill="#1B7F5B"/>
+    <text x="557" y="358" text-anchor="middle">Payments Service</text>
+    <text x="557" y="374" text-anchor="middle">(Stripe Connect adapter)</text>
+
+    <rect x="670" y="334" width="230" height="56" rx="8" fill="#1B7F5B"/>
+    <text x="785" y="358" text-anchor="middle">Logistics Orchestration</text>
+    <text x="785" y="374" text-anchor="middle">Service</text>
+
+    <!-- row3 -->
+    <rect x="40" y="402" width="195" height="56" rx="8" fill="#1B7F5B"/>
+    <text x="137" y="426" text-anchor="middle">Sustainability</text>
+    <text x="137" y="442" text-anchor="middle">Metrics Engine</text>
+
+    <rect x="250" y="402" width="195" height="56" rx="8" fill="#1B7F5B"/>
+    <text x="347" y="426" text-anchor="middle">Reviews &amp; Reputation</text>
+    <text x="347" y="442" text-anchor="middle">Service</text>
+
+    <rect x="460" y="402" width="195" height="56" rx="8" fill="#1B7F5B"/>
+    <text x="557" y="426" text-anchor="middle">Notification Service</text>
+    <text x="557" y="442" text-anchor="middle">(email / SMS / push)</text>
+
+    <rect x="670" y="402" width="230" height="56" rx="8" fill="#E06A1F"/>
+    <text x="785" y="426" text-anchor="middle">Admin &amp; Moderation</text>
+    <text x="785" y="442" text-anchor="middle">Service</text>
+  </g>
+
+  <text x="460" y="486" text-anchor="middle" font-size="11.5" fill="#5B6472">Services communicate synchronously via internal REST/gRPC for reads, and asynchronously</text>
+  <text x="460" y="502" text-anchor="middle" font-size="11.5" fill="#5B6472">via events for state changes (order placed, payment captured, shipment updated, etc.)</text>
+
+  <line x1="460" y1="576" x2="460" y2="600" stroke="#8A93A6" stroke-width="2" marker-end="url(#arrow3)"/>
+
+  <!-- Event bus -->
+  <text x="30" y="616" font-size="13" font-weight="bold" fill="#5B6472">ASYNC EVENT BUS</text>
+  <rect x="20" y="620" width="900" height="50" rx="10" fill="#4658C9"/>
+  <text x="460" y="650" text-anchor="middle" fill="#fff" font-size="13" font-weight="bold">Event Bus / Message Queue (Amazon EventBridge + SQS, or Kafka at scale)</text>
+
+  <line x1="460" y1="670" x2="460" y2="692" stroke="#8A93A6" stroke-width="2" marker-end="url(#arrow3)"/>
+
+  <!-- Data layer -->
+  <text x="30" y="708" font-size="13" font-weight="bold" fill="#5B6472">DATA LAYER</text>
+  <rect x="20" y="712" width="900" height="90" rx="10" fill="#F3F4F8" stroke="#D7DCE8"/>
+
+  <g font-size="12" font-weight="bold" fill="#fff">
+    <rect x="40" y="732" width="170" height="52" rx="8" fill="#0B2447"/>
+    <text x="125" y="754" text-anchor="middle">PostgreSQL</text>
+    <text x="125" y="770" text-anchor="middle" font-size="10.5" font-weight="normal" fill="#DCE3F5">primary system of record</text>
+
+    <rect x="225" y="732" width="170" height="52" rx="8" fill="#0B2447"/>
+    <text x="310" y="754" text-anchor="middle">Redis</text>
+    <text x="310" y="770" text-anchor="middle" font-size="10.5" font-weight="normal" fill="#DCE3F5">cache &amp; sessions</text>
+
+    <rect x="410" y="732" width="170" height="52" rx="8" fill="#0B2447"/>
+    <text x="495" y="754" text-anchor="middle">OpenSearch</text>
+    <text x="495" y="770" text-anchor="middle" font-size="10.5" font-weight="normal" fill="#DCE3F5">listing search index</text>
+
+    <rect x="595" y="732" width="150" height="52" rx="8" fill="#0B2447"/>
+    <text x="670" y="754" text-anchor="middle">S3</text>
+    <text x="670" y="770" text-anchor="middle" font-size="10.5" font-weight="normal" fill="#DCE3F5">images &amp; documents</text>
+
+    <rect x="760" y="732" width="140" height="52" rx="8" fill="#0B2447"/>
+    <text x="830" y="754" text-anchor="middle" font-size="11">Data Warehouse</text>
+    <text x="830" y="770" text-anchor="middle" font-size="10.5" font-weight="normal" fill="#DCE3F5">analytics / BI</text>
+  </g>
+
+  <!-- integration connector arrows from services to sidebar -->
+  <line x1="900" y1="360" x2="965" y2="363" stroke="#E8874A" stroke-width="1.5" stroke-dasharray="4,3" marker-end="url(#arrow3)"/>
+  <line x1="900" y1="360" x2="965" y2="405" stroke="#E8874A" stroke-width="1.5" stroke-dasharray="4,3" marker-end="url(#arrow3)"/>
+  <line x1="900" y1="425" x2="965" y2="447" stroke="#E8874A" stroke-width="1.5" stroke-dasharray="4,3" marker-end="url(#arrow3)"/>
+
+  <!-- Footer note -->
+  <rect x="20" y="820" width="900" height="140" rx="10" fill="#EEF2F8" stroke="#D7DCE8"/>
+  <text x="40" y="846" font-size="13" font-weight="bold" fill="#0B2447">Request flow example — "Buyer submits an RFQ"</text>
+  <text x="40" y="868" font-size="11.5" fill="#22222A">1. Web app calls API Gateway (authenticated JWT) &#8594; 2. Gateway routes to Transactions Service &#8594;</text>
+  <text x="40" y="888" font-size="11.5" fill="#22222A">3. Service writes RFQ to Postgres and publishes an "rfq.created" event &#8594; 4. Event bus fans out to</text>
+  <text x="40" y="908" font-size="11.5" fill="#22222A">Notification Service (alerts seller) and Matching Service (logs signal for recommendations) &#8594;</text>
+  <text x="40" y="928" font-size="11.5" fill="#22222A">5. Seller responds via Messaging Service, which streams updates back to both clients over WebSocket.</text>
+</svg>
