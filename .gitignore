@@ -1,8 +1,17 @@
-moon data/
-vh/
 __pycache__/
 *.pyc
-.claude/
-cybershield-mule-detection/
+
+# Large binary files that exceed GitHub's 100MB limit
+*.img
+*.pt
+*.pth
+*.mp4
+
+# Cache folders
+vh/cache/
 encodings/
-my-info-web/
+dataset/
+test_results/
+
+# Has its own repo
+cybershield-mule-detection/
